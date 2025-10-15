@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie-Express</title>
+    <link rel="stylesheet" href="stylee.css" />
+  </head>
+  <body>
+<!-- =======================
+     HEADER
+====================== -->
+<header class="header">
+  <div class="header-container">
+    <div class="logo">FoodieExpress</div>
+    <div class="location">
+      <span>Deliver to: 
+        <strong>
+          Bengaluru, 560076
+          <i class="arrow">▼</i>
+        </strong>
+      </span>
+      <ul class="location-dropdown">
+        <li>Bengaluru, 560076</li>
+        <li>Delhi, 110001</li>
+        <li>Mumbai, 400001</li>
+      </ul>
+    </div>
+
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search restaurants, cuisines, dishes..."
+      />
+      <button class="search-btn">🔍</button>
+    </div>
+    
+    <div class="user-actions">
+      <a href="#cart" class="cart-icon">
+        🛒
+        <span class="cart-count">3</span>
+      </a>
+      <a href="#profile" class="user-icon">👤</a>
+    </div>
+  </div>
+</header>
+
+<!-- =======================
+     HERO SECTION
+====================== -->
+<section class="hero">
+  <div class="hero-container">
+    <h1><strong>Delicious Food Delivered Fast</strong></h1>
+    <p>
+      Order from your favorite restaurants and get fresh food delivered to
+      your doorstep
+    </p>
+    <a href="#restaurants" class="cta-button">Order Now</a>
+  </div>
+</section>
+
+
+    <!-- =======================
+         CATEGORIES SECTION
+    ====================== -->
+    <section  id="categories"class="categories">
+      <div class="container">
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="categories-grid">
+          <div class="category-card">
+            <h3>KFC</h3>
+            <div class="category-icon">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ntpLu0WTfHlFfZhcnJud0JLzCuBnIZKHmA&s"
+                alt="KFC"
+              />
+            </div>
+            <p>Delicious chicken and fast food items</p>
+          </div>
+          <div class="category-card">
+            <h3>Burgers</h3>
+            <div class="category-icon">
+              <img
+                src="https://thumbs.dreamstime.com/b/tasty-burger-french-fries-fire-close-up-home-made-flames-137249900.jpg"
+                alt="Burger"
+              />
+            </div>
+            <p>Juicy burgers and sandwiches</p>
+          </div>
+          <div class="category-card">
+            <h3>Asian</h3>
+            <div class="category-icon">
+              <img
+                src="https://c8.alamy.com/comp/2E491K3/asian-food-chinese-japanese-and-thai-cuisine-2E491K3.jpg"
+                alt="Asian"
+              />
+            </div>
+            <p>Authentic Asian cuisine</p>
+          </div>
+          <div class="category-card">
+            <h3>Healthy</h3>
+            <div class="category-icon">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/06/29/19/54/healthy-food-1487647_640.jpg"
+                alt="Healthy"
+              />
+            </div>
+            <p>Fresh salads and healthy options</p>
+          </div>
+          <div class="category-card">
+            <h3>Desserts</h3>
+            <div class="category-icon">
+              <img
+                src="https://t3.ftcdn.net/jpg/03/01/97/86/360_F_301978652_O0aPwap1JaEVaAhj3mIlbqNnJGmRyCzC.jpg"
+                alt="Desserts"
+              />
+            </div>
+            <p>Sweet treats to satisfy your cravings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================
+         FEATURED RESTAURANTS SECTION
+    ====================== -->
+    <section id="restaurant" class="featured-restaurants">
+      <div class="container">
+        <h2 class="section-title">Featured Restaurants</h2>
+        <div class="restaurants-grid">
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/63/9f/fe/view-of-the-restaurant.jpg?w=900&h=500&s=1"
+              />
+            </div>
+            <h3>Koshy's Parade Café</h3>
+            <p>
+              Iconic Bengaluru café known for its continental dishes, cozy
+              ambiance, and classic breakfast menu.
+            </p>
+          </div>
+
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/2/21501872/6340c61db7030436b40f922de5c4126f_featured_v2.jpg"
+                alt="Ocean Bite"
+              />
+            </div>
+            <h3>Ocean Bite</h3>
+            <p>
+              Seafood paradise with fresh catches, coastal flavors, and a lively
+              dining experience in the heart of Bengaluru.
+            </p>
+          </div>
+
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2025-07/RESTAURANT%20%282%29.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Vidyarthi Bhavan</h3>
+            <p>
+              Legendary spot for South Indian dosas, idlis, and traditional
+              breakfast items loved by locals and tourists alike.
+            </p>
+          </div>
+
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2018/06/18143923/180618_OliveGoa.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Olive Beach</h3>
+            <p>
+              Elegant Mediterranean cuisine with stunning interiors, perfect for
+              romantic dinners and weekend brunches.
+            </p>
+          </div>
+
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlqACUuvlp0miBNmF6TBl1-JZmOwB9W0lbCDySlEnrSASAmJ9ACIuE6Uvwi2XwnXmgGs&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <h3>Toit Brewpub</h3>
+            <p>
+              Popular microbrewery serving freshly brewed beers, pub classics,
+              and innovative fusion dishes in a lively setting.
+            </p>
+          </div>
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipNqZcXhQDMq-NIhta91TqsHRwCmf4-C4_xwRGx4=s1360-w1360-h1020-rw"
+                alt=""
+              />
+            </div>
+            <h3>Shiro Bengaluru</h3>
+            <p>UB City, is a luxurious pan-Asian restaurant known for its elegant ambiance and vibrant nightlife</p>
+        </div>
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipOTMDzIZrhiB0M6WcEpPsVeyB4f4H4100eK07-G=s1360-w1360-h1020-rw"
+                alt=""
+              />
+            </div>
+            <h3>Lotus Pavilion, ITC Gardenia - Restaurants</h3>
+            <p>multi-cuisine restaurant offering an elegant dining experience with a focus on Indian and global flavors</p>
+          
+      </div>
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noFvjFqLUNGOqjesfPz0x2xwH5xYPY0j19WLsVGkiT-KM9r4kyzL9cDql-6Nw4_yU0NTT2E_Gvgx3Fg32t829UFiOsyUMB_11DXWhkn2fCXeNfihf7uEwl1biVIpTqy-tG4tpot=s1360-w1360-h1020-rw"
+                alt=""
+              />
+            </div>
+            <h3>LUPA</h3>
+            <p>Lupa is a stylish Mediterranean-European restaurant located on MG Road in Bengaluru</p>
+    </section>
+    <!-- =======================
+         MENU SECTION
+    ====================== -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+                alt=""
+              />
+            </div>
+            <h3>Cheese Pizza</h3>
+            <p>
+              Classic Italian pizza with melted cheese, fresh tomato sauce, and
+              herbs.
+            </p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://www.seriouseats.com/thmb/_c-xbP-tch4dpSTxKE1zY16sHo8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20231204-SEA-VeganBurger-FredHardy-00-dbf603c78b694bfd99489b85ab44f4c4.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Veg Burger</h3>
+            <p>
+              Delicious burger with fresh vegetables, cheese, and special sauce.
+            </p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://png.pngtree.com/thumb_back/fw800/background/20241126/pngtree-picture-of-a-sushi-platter-with-variety-rolls-and-nigiri-image_16649134.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Sushi Platter</h3>
+            <p>Assorted fresh sushi rolls with authentic Japanese flavors.</p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://www.shutterstock.com/image-photo/types-cakes-delicious-bulk-patisserie-600nw-2261513481.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Chocolate Dessert</h3>
+            <p>
+              Rich and creamy chocolate dessert to satisfy your sweet cravings.
+            </p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://recipesblob.oetker.in/assets/3909751a3440453d83ea4bfe7001d307/1272x764/chicken-caesar-salad.webp"
+                alt=""
+              />
+              />
+            </div>
+            <h3>Caesar Salad</h3>
+            <p>
+              Fresh lettuce, croutons, and parmesan cheese with classic Caesar
+              dressing.
+            </p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://3.imimg.com/data3/TJ/SB/MY-16125614/hyderabadi-chicken-biryani.jpg"
+                alt=""
+              />
+              />
+            </div>
+            <h3>Chicken Biryani</h3>
+            <p>
+              Fragrant basmati rice cooked with tender chicken and spices.
+            </p>
+        </div>
+         <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://media.istockphoto.com/id/669861628/photo/bowl-of-caesar-salad-closeup.jpg?s=612x612&w=0&k=20&c=2u8XtAiZA_mTwFxv-0aw1JAjWS0EJlYkrZ25fIWHsGk="
+                alt=""
+              />
+            </div>
+            <h3>Caesar Salad</h3>
+            <p>
+              Crisp lettuce with Caesar dressing, croutons, and parmesan.
+            </p>
+      </div>
+        <div class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/053/741/743/small_2x/a-brownie-with-ice-cream-and-nuts-on-top-free-photo.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Brownie with Ice Cream</h3>
+            <p>
+              Warm chocolate brownie served with a scoop of vanilla ice cream
+            </p>
+
+    </section>
+    <!-- =======================
+     POPULAR DISHES SECTION
+======================= -->
+    <section id="popular dish" class="popular-dishes">
+      <div class="container">
+        <h2 class="section-title">Popular Dishes</h2>
+        <div class="dishes-grid">
+          <div class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://thumbs.dreamstime.com/b/close-up-four-cheese-pizza-slice-close-up-shot-four-cheese-pizza-perfectly-melted-cheese-stretchy-gooey-ready-327216466.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Cheese Pizza</h3>
+            <p>
+              Classic Italian pizza with melted cheese and fresh tomato sauce.
+            </p>
+          </div>
+
+          <div class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://www.mccainindia.com/wp-content/uploads/2023/01/tandori-veggi-burger.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Veg Burger</h3>
+            <p>Delicious burger with fresh vegetables and special sauce.</p>
+          </div>
+
+          <div class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/58fd82dbbf629ab224f81b68/1666680224496-173WK4RN3TIHCF5KPI0B/Half-Moon-Sushi-Plate.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Sushi Platter</h3>
+            <p>Assorted fresh sushi rolls with authentic Japanese flavors.</p>
+          </div>
+
+          <div class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://www.foodandwine.com/thmb/G8SuZEOz_nZDI-2JHStyOGA4eqs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/The-Bear-Chocolate-Cake-FT-RECIPE0323-a6a4c882ba8f49e69caeaeda83abbe38.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Chocolate Dessert</h3>
+            <p>
+              Rich and creamy chocolate dessert to satisfy your sweet cravings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+         SPECIAL OFFERS SECTION
+    ====================== -->
+    <section id="special offers" class="special-offers">
+      <div class="container">
+        <h2 class="section-title">Special Offers</h2>
+        <div class="offers-grid">
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumLqzNvNO6Y5tG-1rJlKjX6K5Zq0LerpZbA&s"
+              />
+            </div>
+            <h3>50% Off on Pizza</h3>
+            <p>
+              Get your favorite pizzas at half the price for a limited time!
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iYUpd1gDWItVrssK7xk9BdTf7woY5LAWQg&s"
+                alt="Buy 1 Get 1"
+              />
+            </div>
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>
+              Order any burger and get another one absolutely free. Delicious
+              deal!
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/special-dessert-menu-design-template-235a81a5e31e8652b8759402fbc00a2a_screen.jpg?ts=1661503497"
+                alt="Free Dessert"
+              />
+            </div>
+            <h3>Free Dessert</h3>
+            <p>
+              Get a free dessert with any main course order. Sweeten your meal
+              today!
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyrC6RKg5ZiZiXsTOENJ46yeQSSSdt3-A6UQ&s"
+                alt=""
+              />
+            </div>
+            <h3>Weekend Discount</h3>
+            <p>
+              Enjoy flat 20% off on all orders placed during weekends. Treat
+              yourself!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================
+     CONTACT SECTION
+====================== -->
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-container">
+      
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>📍 Address: 123 Foodie Street, Bengaluru, 560076</p>
+        <p>📞 Phone: +91 8978500649</p>
+        <p>✉ Email: Foodie@gmail.com</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#popular dish">Popular Dishes</a></li>
+          <li><a href="#special offers">Special Offers</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Share Your Thoughts</h3>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </body>
+</html>
